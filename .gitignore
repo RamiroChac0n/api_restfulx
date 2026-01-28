@@ -25,6 +25,7 @@ share/python-wheels/
 *.log
 *.sagec
 .env
+.env.*
 .venv
 env/
 venv/
@@ -39,3 +40,5 @@ instance/
 # Editors/IDE
 .idea/  # JetBrains IDEs (e.g., PyCharm)
 .vscode/ # VS Code
+
+docker-compose*
