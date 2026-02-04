@@ -41,4 +41,4 @@ instance/
 .idea/  # JetBrains IDEs (e.g., PyCharm)
 .vscode/ # VS Code
 
-docker-compose*
+docker-compose

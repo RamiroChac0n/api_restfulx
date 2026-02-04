@@ -1,0 +1,18 @@
+version: '1'
+services:
+  web_prod:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    image: api_restx:1.0.0
+    ports:
+      - 5000:5000
+    environment:
+      - FLASK_RUN_HOST=0.0.0.0
+      - FLASK_RUN_PORT=5000
+    env_file: .env.prod
+    container_name: api_restx_prod
+    network:
+      cunori2026:
+        ipv4_address: 192.168.100.25
+    restart: always
